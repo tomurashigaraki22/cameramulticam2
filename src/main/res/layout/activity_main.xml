@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#000000">
+
+    <!-- Front Camera Preview -->
+    <TextureView
+            android:id="@+id/previewView"
+            android:layout_width="360px"
+            android:layout_height="480px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+    />
+
+    <!-- Back Camera Preview -->
+    <TextureView
+            android:id="@+id/previewView2"
+            android:layout_width="360px"
+            android:layout_height="480px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+    />
+
+    <!-- Start Front Camera Button -->
+    <Button
+            android:id="@+id/startFrontCameraButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_arrow_up"
+            android:contentDescription="Start Front Camera"/>
+
+    <!-- Start Back Camera Button -->
+    <Button
+            android:id="@+id/startBackCameraButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_arrow_down"
+            android:contentDescription="Start Back Camera"/>
+
+    <!-- Capture Button -->
+    <Button
+            android:id="@+id/captureButton"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_camera"
+            android:contentDescription="Capture Both Cameras"/>
+
+</RelativeLayout>
